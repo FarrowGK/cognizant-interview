@@ -5,9 +5,10 @@ const Button = (props) => {
     let handleClick = () => {
         console.log(props.message)
     }
+    
     return (
     <div>
-        <button onClick={handleClick}>Click Me!</button>
+        <button onClick={handleClick}>Submit</button>
     </div>
     )
 }

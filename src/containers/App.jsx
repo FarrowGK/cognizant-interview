@@ -5,16 +5,21 @@ import Button from '../components/Button';
 import WeatherDetails from '../components/WeatherDetails';
 
 const App = () => {
+    const [city, setCity] = ("");
+
+    let handleSubmit = () => {
+        setCity(City);
+    }
     return (
         <div>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>
                     Enter City:
                     <input type="text" name="City" />
                 </label>
-                    <Button message={"Hello World!"}/>
+                    <Button />
             </form>
-            <WeatherDetails />
+            <WeatherDetails city={city}/>
         </div>
     )
 }
